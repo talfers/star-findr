@@ -1,0 +1,165 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+	font-family: montserrat, arial, verdana;
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ACB6E5,   #4F6388);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ACB6E5, #4F6388); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#header {
+  width: 100%;
+  padding: 24px 0px 24px 48px;
+  background-color: #232323;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+#brand {
+  margin-right: 24px;
+  font-size: 24px;
+  color: #f5f5f5;
+  display: inline;
+}
+
+content {
+  margin: 108px 36px 36px 36px;
+}
+
+section {
+  margin: 88px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: inline;
+}
+
+#query {
+  margin: 12px 40px;
+}
+
+#pod {
+  flex: 1 1 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 18px;
+}
+
+.item .title {
+  margin: 12px 0px 8px 0px;
+}
+
+.item .img {
+  width: 100%;
+  flex: 1 1 300px;
+  z-index: 50;
+  background-clip: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item .img:hover {
+  transform: scale(1.05);
+}
+
+input {
+  height: 28px;
+  width: 300px;
+}
+
+.item .desc {
+  margin: 0;
+  font-size: 12px;
+}
+
+button {
+  background-image: url(https://ak9.picdn.net/shutterstock/videos/18681329/thumb/1.jpg);
+  background-clip: border-box;
+  background-position: center;
+  padding: 12px 20px;
+  border: none;
+  color: #f5f5f5;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button#getAPI {
+  margin-left: 4px;
+}
+
+a#daily {
+  float: right;
+  display: inline;
+  margin-right: 96px;
+}
+
+section .show-title {
+  margin: 24px 0px;
+  font-size: 40px;
+}
+
+section .show-img {
+  z-index: 98;
+  width: 100%;
+  height: 768px;
+  background-clip: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section .meta {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 4px 0px;
+}
+
+section .meta p {
+  font-size: 12px;
+}
+
+section .show-desc {
+  margin: 24px 0px;
+  width: 50%;
+  text-align: center;
+  line-height: 1.75;
+}
+
+content .result {
+  margin-left: 40px;
+}

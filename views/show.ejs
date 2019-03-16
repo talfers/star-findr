@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<section>
+    
+    <h1 class='show-title'><%= item[0].data[0].title %></h1>
+    <div style="background-image: url('<%= url.href %>');" class="show-img"></div>
+    <div class='meta'>
+        <p class='author'>Photographer: <%= item[0].data[0].photographer %></p>
+        <p class='location'>Location: <%= item[0].data[0].location %></p>
+        <p class='date'>Date Captured: <%= item[0].data[0].date_created %></p>
+    </div>
+    <p class='show-desc'><%= item[0].data[0].description %></p>
+</section>
+
+<% include partials/footer %>

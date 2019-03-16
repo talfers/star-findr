@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SpaceFinder</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='/stylesheets/main.css'>
+    <link rel="icon" href="/img/rocket_icon.png">
+</head>
+<body>
+    <header id='header'>
+        <a href='/' id='brand'>SpaceFinder</a>
+        <form action='/search' method='POST'>
+            <input type="text" name='search' id='search'>
+            <button id='getAPI'>Search</button>
+        </form>
+        <a id='daily' class='right' href='https://nasa-image.herokuapp.com'><button>Photo of the Day</button></a>
+    </header>
