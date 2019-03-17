@@ -100,9 +100,10 @@ input {
   width: 300px;
 }
 
-.item .desc {
+.item p.desc {
   margin: 0;
   font-size: 12px;
+  overflow: hidden;
 }
 
 button {
@@ -200,6 +201,24 @@ content .result {
 #daily-desc {
   width: 60%;
   line-height: 1.5;
+}
+
+#see-more {
+  margin: 0 auto;
+}
+
+footer {
+  padding: 0px 48px;
+  background: #232323;
+  color: #f0f0f0;
+  margin-top: 24px;
+  flex: 1 1 75px;
+  display: flex;
+  align-items: center;
+}
+
+#footer-content p {
+  font-size: 12px;
 }
 
 @media (max-width: 1000px) {
