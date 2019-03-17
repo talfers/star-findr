@@ -21,6 +21,7 @@
         <% }); %>
     </div>
 </content>
-<button onclick="seeMore()" id='see-more'>See More</button>
-
+<% if(results.length !== 0) { %>
+    <button onclick="seeMore()" id='see-more'>See More</button>
+<% } else {} %>
 <% include partials/footer %>
