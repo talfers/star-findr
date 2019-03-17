@@ -282,7 +282,7 @@ footer {
       padding: 16px 36px;
       font-size: 20px;
     }
-    #daily {
+    a#daily {
       display: none;
     }
 }
