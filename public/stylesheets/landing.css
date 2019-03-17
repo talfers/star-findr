@@ -63,6 +63,8 @@ input {
   height: 28px;
   width: 40%;
   margin: 12px 0px;
+  border-radius: 48px;
+  padding-left: 16px;
 }
 
 content #landing-header {
@@ -77,4 +79,22 @@ content #landing-header {
 
 content #landing-header h1 {
     color: #f0f0f0;
+}
+
+@media (max-width: 1100px) {
+    content #landing-header h1 {
+        font-size: 72px;
+    }
+    content #landing-header {
+        width: 80%;
+    }
+    input {
+        height: 60px;
+        width: 70%;
+        font-size: 36px;
+    }
+    button {
+      padding: 24px 40px;
+      font-size: 28px;
+    }
 }
