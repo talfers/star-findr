@@ -79,7 +79,11 @@ form {
 
 .item .img {
   width: 100%;
-  flex: 1 1 300px;
+  height: auto;
+  /*to keep large imgs contained*/
+  overflow-y: hidden;
+  /*to keep img heights consistant*/
+  height: 300px;
   z-index: 50;
   background-clip: border-box;
   background-position: center;
@@ -259,7 +263,7 @@ content .result {
       padding: 16px 36px;
       font-size: 20px;
     }
-    a#daily {
+    #daily {
       display: none;
     }
 }
