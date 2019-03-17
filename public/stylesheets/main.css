@@ -56,7 +56,7 @@ form {
 }
 
 #query {
-  margin: 12px 40px;
+  margin: 12px 24px;
 }
 
 #pod {
@@ -166,7 +166,7 @@ section .show-desc {
 }
 
 content .result {
-  margin-left: 40px;
+  margin-left: 24px;
 }
 
 .img-link {
@@ -174,6 +174,29 @@ content .result {
   height: 100%;
 }
 
+#daily-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 144px;
+}
+
+#daily-image {
+  width: 70%;
+  height: auto;
+  border: 8px #18163D solid;
+}
+
+#daily-title {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#daily-desc {
+  width: 60%;
+  line-height: 1.5;
+}
 
 @media (max-width: 1000px) {
     .item {
@@ -216,19 +239,21 @@ content .result {
     #header {
       display: flex;
       flex: 1 1 200px;
-      justify-content: space-around;
-      
+      justify-content: space-between;
     }
     #brand {
       font-size: 48px;
+      
     }
     form {
       display: flex;
       align-items: center;
+      margin-right: 36px;
     }
     input {
       height: 48px;
       width: 300px;
+      font-size: 24px;
     }
     button {
       padding: 16px 36px;

@@ -36,15 +36,26 @@ app.get('/search/:id', function(req, res){
             var imgUrl = imgData.data.collection.items[0];
             res.render('show', {item: data, url: imgUrl});
         })
-        .catch(function(err){
-            console.log(err);
+        .catch(function(error){
+            console.log('Error with image data: ' + error);
         });
+    })
+    .catch(function(err){
+        console.log('Error with meta data: ' + err);
+    });
+});
+
+app.get('/daily', function(req, res) {
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=D2Ch46PGEv2WMJB5fUSXceBZWjmVJB5GqT2leg8E')
+    .then(function(response){
+        var image = response.data;
+        res.render('daily', {image: image});
     })
     .catch(function(err){
         console.log(err);
     });
 });
-    
+
 app.listen(port, function(){
     console.log('NASA Image server started on ' + port);
 })

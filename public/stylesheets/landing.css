@@ -68,17 +68,19 @@ input {
 }
 
 content #landing-header {
-    width: 35%;
-    background-color: rgba(35, 35, 35, 0.7);
-    padding: 12px;
+    width: 50%;
+    /*background-color: rgba(35, 35, 35, 0.7);*/
     display: flex;
     justify-content: center;
-    margin: 12px 0px;
+    margin: 0px 0px;
     border-radius: 12px;
 }
 
 content #landing-header h1 {
     color: #f0f0f0;
+    font-size: 60px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    margin: 16px 0px;
 }
 
 @media (max-width: 1100px) {
@@ -89,7 +91,7 @@ content #landing-header h1 {
         width: 80%;
     }
     input {
-        height: 60px;
+        height: 48px;
         width: 70%;
         font-size: 36px;
     }
