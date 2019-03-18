@@ -1,5 +1,4 @@
 var n = $('#pod').children().length;
-var clickArr = [];
 
 var seeMore = function(results){
     $(document).ready(function(){
