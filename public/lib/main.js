@@ -1,4 +1,5 @@
 var n = $('#pod').children().length;
+var clickArr = [];
 
 var seeMore = function(results){
     $(document).ready(function(){
@@ -7,8 +8,12 @@ var seeMore = function(results){
         .then(function(response){
             var data = response.data.collection.items;
             data.slice(n, n + 15).forEach(function(item){
-                var fullDesc = item.data[0].description.substring(0, 120);
-                var href = item.links[0].href;
+                if(item.data[0].description !== undefined){
+                    var fullDesc = item.data[0].description.substring(0, 120);
+                    var href = item.links[0].href;
+                } else {
+                    return;
+                }
                 if(fullDesc.indexOf('<') >= 0){
                     var index = fullDesc.indexOf('<');
                     fullDesc = fullDesc.substring(0, index);
@@ -22,6 +27,7 @@ var seeMore = function(results){
                         "</a>"
                         );
                 } else {
+                    return;
                 }
             });
         n = n + 15;
