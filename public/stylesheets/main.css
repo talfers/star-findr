@@ -288,4 +288,16 @@ footer {
     a#daily {
       display: none;
     }
+    footer {
+      flex: 1 1 125px;
+      max-height: 125px;
+      margin-top: 48px;
+    }
+    #footer-content p {
+      font-size: 24px;
+    }
+
+    #footer-content .credit {
+      font-size: 12px;
+    }
 }
