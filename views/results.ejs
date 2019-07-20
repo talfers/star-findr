@@ -1,6 +1,6 @@
 <% include partials/header %>
 <content>
-    <h1 data-query='<%= query %>' id='query'>Space Search for '<%= query %>'</h1>
+    <h1 data-query='<%= query %>' id='query'>Star Search for '<%= query %>'</h1>
     <% if(results.length == 0) { %>
         <p class='result'>The universe has no results for your query...</p>
     <% } else { %>
@@ -10,13 +10,13 @@
         <% results.slice(0, 15).forEach(function(item){ %>
             <% if(item.data[0].media_type !== 'video'){ %>
                 <a class='item' href='/search/<%= item.data[0].nasa_id %>'>
-                    <div class='img' style='background-image: url(<%= item.links[0].href %>);'></div>
+                    <img class='img' src="<%= item.links[0].href %>"></img>
                     <h4 class='title'><%= item.data[0].title %></h4>
                     <p class='desc'><%= item.data[0].description.substring(0, 120) + "..." %></p>
                 </a>
             <% } else { %>
             <% } %>
-            
+
         <% }); %>
     </div>
 </content>

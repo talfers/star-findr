@@ -19,10 +19,10 @@ var seeMore = function(results){
                 }
                 if(item.data[0].media_type !== 'video' && href.indexOf(' ') == -1){
                     $('#pod').append(
-                        "<a class='item' href='/search/" + item.data[0].nasa_id + "'>" + 
-                            "<div class='img' style='background-image: url(" + item.links[0].href + ");'></div>" + 
-                            "<h4 class='title'>" + item.data[0].title + "</h4>" + 
-                            "<p class='desc'>" + fullDesc + "..." + "</p>" + 
+                        "<a class='item' href='/search/" + item.data[0].nasa_id + "'>" +
+                            "<img class='img' src=" + item.links[0].href + "></img>" +
+                            "<h4 class='title'>" + item.data[0].title + "</h4>" +
+                            "<p class='desc'>" + fullDesc + "..." + "</p>" +
                         "</a>"
                         );
                 } else {
@@ -36,4 +36,3 @@ var seeMore = function(results){
         });
     });
 };
-

@@ -1,5 +1,5 @@
 const express = require("express");
-var port = process.env.PORT;
+var port = process.env.PORT || 3000;
 const app = express();
 const bodyParser = require("body-parser");
 const axios = require('axios');
@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
     res.render('home');
-    
+
 });
 
 app.post('/search', function(req, res){
@@ -57,5 +57,5 @@ app.get('/daily', function(req, res) {
 });
 
 app.listen(port, function(){
-    console.log('NASA Image server started on ' + port);
+    console.log('Starfindr server started on ' + port);
 })

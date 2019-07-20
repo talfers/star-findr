@@ -53,15 +53,21 @@ button {
   font-weight: bold;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.75);
   cursor: pointer;
-  border: #232323 solid 3px;
+  transition: transform 0.2s ease;
   margin: 12px 0px;
+  border-radius: 4px;
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
+
+button:active {
+  transform: scale(0.98);
+}
+
 
 input {
   height: 28px;
@@ -78,6 +84,7 @@ content #landing-header {
     justify-content: center;
     margin: 0px 0px;
     border-radius: 12px;
+    text-align: center;
 }
 
 content #landing-header h1 {
