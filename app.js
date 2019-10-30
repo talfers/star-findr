@@ -17,6 +17,7 @@ app.get('/', function(req, res){
 
 app.post('/search', function(req, res){
     var query = req.body.search;
+    if(query === "" || " ") res.redirect("/");
     axios.get('https://images-api.nasa.gov/search?q=' + query)
     .then(function(response){
         var data = response.data.collection.items;
